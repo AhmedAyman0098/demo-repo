@@ -1,4 +1,3 @@
-#numeric validation
 from fastapi import FastAPI , Path , Query
 
 app = FastAPI()
@@ -21,4 +20,5 @@ async def get_item(
         min_price : float = Query(..., ge=1 , description=" price must be greater than 0"),
         max_price : float = Query(..., le=1000 , description="Maximum price must be less than or equal to 1000")
 ):
+
     return {"min_price":min_price,"max_price":max_price }
