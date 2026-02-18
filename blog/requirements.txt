@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+sqlalchemy
+passlib
+becrypt
+python-jose
+argon2_cffi
+argon2-cffi-bindings
+python-multipart
+email-validator
